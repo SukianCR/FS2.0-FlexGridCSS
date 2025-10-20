@@ -1,64 +1,47 @@
-.grid-container {
-  display: grid;                     /* Turn on grid layout */
-/* grid-template-columns: repeat(3, 1fr); 3 equal columns */
-  /* grid-template-columns: repeat(2, 1fr);  2 columns */
-  grid-template-columns: 7em 1fr 2fr;
+/* SHEET PAGE */
 
-  gap: 1em;     
-  background-color: rgba(255, 255, 0, 0.498);                    /* space between boxes */
-  /*    padding: 0.5em;*/
+.pink{color: plum;}
+.green{color:rgba(43, 220, 81, 0.659)}
+li::before{ content: "🍓 "; }   
+li{padding: 0.3em 0em;}
+ul{list-style: none; margin-left:-2em}
+h1{font-size: 2.3em; color:rgba(43, 220, 81, 0.659)}
+
+
+/* INDEX PAGE */
+
+.bkgray {
+  background-color: rgba(0, 0, 0, 0.114);
+}
+.grid {
+  display: grid;
+  gap: 1rem;
+  /* grid-template-columns: 100px 1fr 2fr; */
+  grid-template-columns: repeat(auto-fit, minmax(min(10rem, 100%), 1fr));
+  margin: 0 0 1rem 0;
 }
 
-.grid-container2 {
-  display: grid;                     /* Turn on grid layout */
-/* grid-template-columns: repeat(3, 1fr); 3 equal columns */
-  /* grid-template-columns: repeat(2, 1fr);  2 columns */
-  grid-template-columns: auto auto auto auto;
-
-  gap: 1em;     
-  background-color: rgba(255, 255, 0, 0.498);                    /* space between boxes */
-  /*    padding: 0.5em;*/
-}
-
- .grid-container div:nth-child(1) {
-  grid-column: span 3; /* first box takes 2 columns */
-}
- .grid-container div:nth-child(3) {
-  grid-column: span 2; /* first box takes 2 columns */
-  background-color: rgba(232, 21, 200, 0.674);
-}
-
-.grid-container div , .grid-container2 div{
-  background-color: rgba(235, 60, 247, 0.619);
-  color: white;
-  font-size: 1.5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3em;
-  border-radius: 0.5em;
-  border: black 1px solid;
-  ;
+.grid > div {
+  height: 5rem;
+  background: rgb(241, 115, 241);
+   
 }
 
 
-.grid-container div:hover {
-  background-color: rgba(106, 210, 255, 0.797);          /* Change color on hover */
-  cursor: pointer;     
-  color:black              /* Pointer cursor on hover */
+.grid2 {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  margin: 0 0 1rem 0;
 }
 
-.grid-container div.green:hover, .grid-container2 div.green:hover {
-  background-color: rgba(106, 255, 143, 0.951); /* Green background */
+.grid2 > div {
+  height: 6rem;
+  background: rgba(0, 255, 170, 0.656);
+  min-width: 7rem;
 }
 
-.grid-container div.yellow:hover , .grid-container2 div.yellow:hover{
-  background-color: rgba(255, 255, 78, 0.707); /* Green background */
-} 
 
-.spacer {
-          height:4em;
+body {
+  margin: 1rem;
 }
-
-body{display: flex; justify-content: center;}
-
