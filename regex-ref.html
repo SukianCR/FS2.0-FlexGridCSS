@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Reference</title>
+    <link rel="stylesheet" href="style.css">
+      <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+</head>
+<body>
+       <div class="grid">
+         <div><a href="index.html">Home</a></div>
+       <div><a href="css-grid.html">Css-grid</a></div>
+    <div><a href="css-flex.html">Css-flex</a></div>
+      <div><a href="JS-array-funct.html">Js-array-funct</a></div>
+      <div><a href="https://codepip.com/games">Games</a></div>
+      <div><a href="regex-ref.html">Regex Reference</a></div>
+    
+    </div>
+
+<h1>Regex Reference</h1>
+<h2>Character Sets</h2>
+<ul>
+    <li>[xyz]	matches x, y, or z</li>
+    <li>[a-c]	matches a to c, equivalent to [abc]</li>
+    <li>[^xyz]	negation, matches any character except x, y, or z</li>
+    <li>abc|xyz	alternative, matches abc or xyz</li>
+    <li>.</li>	wildcard, matches any character except new lines</li>
+</ul>
+
+<h2>Metacharacters</h2>
+<ul>
+    <li>\d	any digit, equivalent to [0-9]</li>
+    <li>\D	any non-digit, equivalent to [^0-9]</li>
+    <li>\w	any word character, equivalent to [a-zA-Z0-9_]</li>
+    <li>\W	any non-word character, equivalent to [^a-zA-Z0-9_]</li>
+    <li>\s	any whitespace character, including spaces, tabs, and new lines</li>
+    <li>\S	any non-whitespace character</li>
+</ul>
+<h2>Quantifiers</h2>
+<ul>
+    <li>*	0 or more times</li>
+    <li>+	1 or more times</li>
+    <li>?	0 or 1 times</li>
+    <li>{2}	2 times</li>
+    <li>{2,}	2 or more times</li>
+    <li>{2,5}	2 to 5 times</li>
+    <li>?	converts quantifier from greedy to lazy</li>
+</ul>
+<h2>Assertions</h2>
+<ul>
+    <li>^	matches the start of a string</li>
+    <li>$	matches the end of a string</li>
+    <li>\b	matches a word boundary</li>
+    <li>\B	matches a non-word boundary</li>
+    <li>x(?=y)	positive lookahead, x if followed by y</li>
+    <li>x(?!y)	negative lookahead, x if not followed by y</li>
+    <li>(?<=y)x	positive lookbehind, x if preceded by y</li>
+    <li>(?<!y)x	negative lookbehind, x if not preceded by y</li>
+</ul>
+<h2>Capture Groups</h2>
+<ul>
+    <li>(xyz)	capture group</li>
+    <li>(?:xyz)	non-capture group</li>
+    <li>\1	backreference to first capture group</li>
+</ul>
+
+<!-- str.match(/regex/); -->
+
+</body>
+</html>
