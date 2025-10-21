@@ -5,7 +5,7 @@
 li::before{ content: "🍓 "; }   
 li{padding: 0.3em 0em;}
 ul{list-style: none; margin-left:-2em}
-h1{font-size: 2.3em; color:rgba(43, 220, 81, 0.659)}
+h1{color:rgba(43, 220, 81, 0.659)}
 
 
 /* INDEX PAGE */
